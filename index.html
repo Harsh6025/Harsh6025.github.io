@@ -3,122 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culturalidentity.com</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Travis's Cat Family</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
-
 <body>
-    <header>CULTURAL IDENTITY
-        <a href="about.html" >
-        <button class="header-button">HOME</button>
-        </a>
-        <ul class="list-container">
-            <li><a href="#section1">Go to Section 1</a></li>
-            <li><a href="#section2">Go to Section 2</a></li>
-            <li><a href="#section3">Go to Section 3</a></li>
-         </ul>
-    </header> 
+    <div class="container-fluid main-container">
+        <!-- Header -->
+        <header>
+            <div class="col-12">
+                <h1>Travis's Cat Blog</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="maxwell.html">Maxwell</a></li>
+                        <li><a href="tenley.html">Tenley</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div class="row content-row">
+            <!-- Sidebar -->
+            <aside class="col-md-3" id="sidebar">
+        
+                <div class="sidebar">
+                    <h4>Cat Poll</h4>
+                    <form id="pollForm">
+                      <div class="mb-3">
+                        <label for="userName" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="userName" required>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Who's your favourite cat?</label>
+                        <select class="form-select" id="favCat" required>
+                          <option value="">Choose...</option>
+                          <option value="Maxwell">Maxwell</option>
+                          <option value="Tenley">Tenley</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Vote</button>
+                    </form>
+                    <div id="pollResults" class="results"></div>
+                  </div>
+                <div class="cat-nav">
+                    <div class="cat-item" style="border-color: #8B0000;">
+                        <a href="maxwell.html">Maxwell</a>
+                    </div>
+                    <div class="cat-item" style="border-color: #8B4513;">
+                         <a href="tenely.html">Tenley</a>
+                    </div>
+        </div>
+            </aside>
 
-<h1 id="section1">Definition of Cultural Identity</h1>
-    <p>Cultural identity plays a vital role in shaping who we are, influencing not only how we see the world but also how we interact with others. Growing up in a multicultural environment, I have come to appreciate the blend of traditions, languages, and values that shape my understanding of self. My cultural heritage—rooted in [mention your background, e.g., Hispanic, Asian, African, etc.]—has provided me with a unique perspective on the world, helping me embrace diversity and develop empathy. Whether it's the food we share at family gatherings, the customs passed down through generations, or the language we speak, each part of my culture has contributed to my sense of belonging and shaped my approach to challenges. At the same time, navigating multiple cultural identities has taught me the importance of adaptability and understanding. Embracing my cultural background has not only deepened my sense of pride but has also motivated me to connect with others from diverse backgrounds, fostering a community where differences are celebrated.</p>
-<h1>Importance of family and traditions</h1> 
-    <img class="image"
-    src="happy-indian-family.avif" alt="happy-indian-family">
-    <a href="https://img.freepik.com/premium-photo/happy-indian-family-generative-ai_849906-9356.jpg">indian family image</a>
-    <ul>
-        <li>Family plays a central role in transmitting cultural identity through generations, through practices, stories, and rituals.</li>
-        <li>Cultural traditions (such as holidays, celebrations, and meals) shape the way we understand our heritage and sense of belonging.
-        </li>
-    </ul>
-    <h1>Role of language</h1>
-    <ul>
-        <li>Language is a powerful aspect of cultural identity—it helps preserve traditions, express emotions, and connect individuals within a cultural community.
-            </li>
-            <li>
-                The ability to speak multiple languages can also create a link between different cultures and facilitate communication across communities.
-                </li>
-        </ul>
-    <h1>Cultural Pride and Challenges</h1>
-    <ul>
-        <li>People may experience a strong sense of pride in their cultural heritage, which can motivate them to preserve traditions and educate others about their culture.</li>
-        <li>However, individuals from minority or marginalized cultural groups may face challenges such as discrimination, misrepresentation, or a sense of exclusion in mainstream society.
-        </li>
-    </ul>
-    
-<h1 id="section2">Indian culture</h1>
-<p >India's culture is one of the oldest and most diverse in the world, shaped by centuries of history, tradition, and spirituality. It is a rich blend of languages, religions, festivals, art, music, dance, and cuisine, varying across different regions. Hinduism, Islam, Christianity, Sikhism, Buddhism, and Jainism are among the major religions that influence India's cultural landscape. Traditional festivals like Diwali, Holi, Eid, Christmas, and Pongal showcase the country's unity in diversity. Indian cuisine, known for its variety of spices and flavors, differs from North to South. Classical dance forms like Bharatanatyam, Kathak, and Odissi, along with vibrant folk traditions, reflect India's artistic heritage. Despite modernization, India continues to preserve its deep-rooted customs while adapting to global influences, making its culture a unique fusion of tradition and contemporary lifestyle.
-</p>
+            <!-- Main Content -->
+            <main class="col-md-9" id="main-content">
+                <h2>Blog Posts</h2>
+                
+                <div class="blog-post featured-post" style="border-color:rgb(232, 105, 105);">
+                    <h3>Mona and Tenley Fighting <span class="badge bg-success">New</span></h3>
+                    <p class="tags">Tags: <span class="badge bg-secondary">Short</span> <span class="badge bg-info">Mona</span> <span class="badge bg-warning">Tenley</span> <span class="badge bg-dark">English</span></p>
+                    <p>Gosh, they sure do love to fight a lot – their personalities just clash. Mona is so anxious and shy all the time, and Tenley is young and rambunctious and loves to play, so they just don't get along sometimes! I've tried many things to help, but the best thing to do is to have my partner and I play with each of them separately and give them lots of cuddles – that does the trick!</p>
+                </div>
+                
+                <div class="blog-post featured-post" style="border-color:rgb(105, 105, 230);">
+                    <h3>Traveling</h3>
+                    <p class="tags">Tags: <span class="badge bg-secondary">Short</span> <span class="badge bg-warning">Tenley</span> <span class="badge bg-dark">English</span></p>
+                    <p>Dangit, I have to go to New Orleans for a conference which means leaving my poor little kitties behind! I can't imagine they would enjoy such a trip… Tenley is terrified of leaving the house. Every time I put her on a little harness to go for a walk, she panics and runs back inside. What a strange cat!</p>
+                </div>
+                
+                <div class="blog-post featured-post" style="border-color:rgb(122, 224, 122);">
+                    <h3>Space Making Post</h3>
+                    <p class="tags">Tags: <span class="badge bg-secondary">Long</span> <span class="badge bg-danger">Maxwell</span> <span class="badge bg-dark">Latin</span></p>
+                    <p>This is just to test your layout. It's a bunch of lorem ipsum, which Maxwell spoke fluently.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas lobortis arcu, nec mattis diam consectetur at. Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum imperdiet eget nibh. Donec elit erat, finibus vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et lorem gravida, commodo accumsan magna posuere. Proin sodales egestas pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a nibh at est condimentum porttitor ut quis est. Donec accumsan lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse potenti. Sed mollis egestas tempus. Duis a lectus libero. Nam sed est turpis. Nunc justo arcu, feugiat quis elit eu, cursus euismod mi. Curabitur rutrum nisl libero, in elementum neque volutpat euismod. Mauris semper sollicitudin purus nec tempus.</p>
+                    <p>Ut mattis nulla sem, ac tristique est aliquam et. Maecenas lorem velit, ornare quis aliquam sed, viverra vitae diam. Duis et sem mi. Praesent pretium nisi interdum, ullamcorper nisl non, pharetra orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper sit amet quam ac tincidunt. Proin eget faucibus nisi. Donec finibus facilisis felis non consectetur. Aliquam quis volutpat tellus, vitae condimentum urna. Praesent vitae augue fringilla, pretium eros vel, ultrices lectus.</p>
+                    <p>Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse aliquet convallis sapien, ut pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus.</p>
+                </div>
+            </main>
+        </div>
 
-
- <table>
-    <tr>
-        <th>Dance Form</th>
-        <th>State</th>
-        <th>Culture & Significance</th>
-    </tr>
-    <tr>
-        <td>Bharatanatyam</td>
-        <td>Tamil Nadu</td>
-        <td>One of the oldest classical dances, performed in temples as a form of devotion.</td>
-    </tr>
-    <tr>
-        <td>Kathak</td>
-        <td>Uttar Pradesh</td>
-        <td>A storytelling dance form influenced by Persian and Mughal cultures.</td>
-    </tr>
-    <tr>
-        <td>Kathakali</td>
-        <td>Kerala</td>
-        <td>Known for elaborate costumes and facial expressions, depicting mythological stories.</td>
-    </tr>
-    <tr>
-        <td>Odissi</td>
-        <td>Odisha</td>
-        <td>A graceful dance that originates from temple traditions of Odisha.</td>
-    </tr>
-    <tr>
-        <td>Kuchipudi</td>
-        <td>Andhra Pradesh</td>
-        <td>A blend of dance and drama, often performed as a dance-drama form.</td>
-    </tr>
-    <tr>
-        <td>Manipuri</td>
-        <td>Manipur</td>
-        <td>Soft and spiritual dance form inspired by Lord Krishna's Rasleela.</td>
-    </tr>
-    <tr>
-        <td>Bihu</td>
-        <td>Assam</td>
-        <td>A folk dance performed during the Assamese New Year celebrations.</td>
-    </tr>
-</table>
-<h1>Konark Dance Festivals :</h1>
-
-<img class="image"
- src="dance.jpg" alt="dance"> 
- <a 
- href="https://www.bestpubquiz.co.uk/wp-content/uploads/2017/10/Indian-culture-1.jpg">konark dance image</a>
-
- <h1>Buildings of india</h1>
- <div class="grid-container" id="section3">
-    <div class="grid-items"><img src="GettyImages-165204592.webp" alt="Indain Buildings"></div>
-    <div class="grid-items"><img src="GettyImages-95846139.webp" alt="indian Buildings"></div>
-    <div class="grid-items"><img src="Rashtrapati-Bhavan-Rajpath-Raisina-Hill-New-Delhi-India.webp" alt="indain Buildings"></div>
-    <div class="grid-items"><img src="Sun-Temple-Konark-Orissa-India.jpg" alt="indain Buildings"></div>
-    
- </div>
-<footer>
-    
-    <a href="about.html">
-    <button class="footer-button">BACK</button>
-    </a>
-    <a href="main.html">
-    <button class="footer-button">NEXT</button>
-    </a>
-    
-    
-    
-</footer>
-
+        <!-- Footer -->
+        <footer class="row" id="footer">
+            <div class="col-12">
+                <p>&copy; 2025 Created by Harsh-Lnu and Ekamnoor kaur-Lnu. Images supplied by Travis Cattington.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="javascript/script.js"></script>
 </body>
 </html>
